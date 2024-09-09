@@ -414,7 +414,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="hero-content">
-                        <h1 class="display-3 text-dark fw-bold">Spad Server Services</h1>
+                        <h1 class="display-3 text-dark fw-bold">Услуги Spad Server</h1>
                         <!-- <p class="lead">High-performance, reliable data center solutions for your business.</p> -->
                     </div>
                 </div>
@@ -424,7 +424,7 @@
 
     <section class="my-5">
         <div class="container text-center">
-            <h2 class=" mb-4 fw-bold">Our Reputation</h2>
+            <h2 class=" mb-4 fw-bold">Наша репутация</h2>
         </div>
     </section>
 
@@ -438,8 +438,8 @@
                         <div class="icon mb-3">
                             <i class="bi bi-headset"></i> <!-- Bootstrap Icon for headset -->
                         </div>
-                        <h5 class="mb-3">Best Services</h5>
-                        <p>Providing fast and expert support that improves your experience.</p>
+                        <h5 class="mb-3">Лучшие услуги</h5>
+                        <p>Предоставление быстрой и профессиональной поддержки, улучшающей ваш опыт.</p>
                     </div>
                 </div>
 
@@ -449,8 +449,8 @@
                         <div class="icon mb-3">
                             <i class="bi bi-stack"></i> <!-- Bootstrap Icon for stack -->
                         </div>
-                        <h5 class="mb-3">Stable Technology</h5>
-                        <p>Using up-to-date technologies to ensure quality and efficiency.</p>
+                        <h5 class="mb-3">Стабильные технологии  </h5>
+                        <p>Использование современных технологий для обеспечения качества и эффективности.</p>
                     </div>
                 </div>
 
@@ -460,8 +460,8 @@
                         <div class="icon mb-3">
                             <i class="bi bi-server"></i> <!-- Bootstrap Icon for server -->
                         </div>
-                        <h5 class="mb-3">Dedicated Infrastructure</h5>
-                        <p>Powerful and exclusive infrastructure that provides fast and secure performance.</p>
+                        <h5 class="mb-3">Выделенная инфраструктура</h5>
+                        <p>Мощная и эксклюзивная инфраструктура, которая обеспечивает вам быструю и безопасную работу.</p>
                     </div>
                 </div>
             </div>
@@ -481,16 +481,11 @@
                 <!-- Right: About Us Content -->
                 <div class="col-12 col-md-4">
                     <div class="about-content">
-                        <h3>About us</h3>
+                        <h3>О нас</h3>
                         <p>
-                            Spad Server Company was established with the aim of providing quality web hosting and cloud servers.
-                            We provide safe and stable services to various businesses using advanced infrastructure and modern technologies.
-                        </p>
-                        <p>
-                            Our expert team helps clients grow and succeed by providing professional support and innovative solutions. 
-                            With a focus on customer satisfaction, Spad Server offers a reliable and efficient web hosting experience.
-                        </p>
-                        <a href="#" class="btn btn-custom">More on Our History</a>
+                            Компания Spad Server была основана с целью предоставления высококачественных услуг хостинга и облачных серверов. Мы используем передовую инфраструктуру и современные технологии, чтобы обеспечить стабильные и безопасные сервисы для различных бизнесов.
+                            Наша команда профессионалов предоставляет экспертную поддержку и инновационные решения, помогая клиентам достигать успеха. Spad Server ориентирован на удовлетворение потребностей клиентов и предлагает надежный и эффективный опыт хостинга.                        </p>
+
                     </div>
                 </div>
             </div>
@@ -508,48 +503,64 @@
                 <!-- Card 1: White Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-white">
-                        <img src="{{asset('/storage/images/cloud-service.png')}}" alt="Icon"   class="img-center">
-                        <h5>Iranian and European cloud servers</h5>
+                        <a href="{{route('iran-european-cloud-servers')}}" class="text-decoration-none text-dark">
+
+                            <img src="{{asset('/storage/images/cloud-service.png')}}" alt="Icon"   class="img-center">
+                            <h5>Иранские и европейские облачные серверы</h5>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 2: Blue Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-blue">
-                        <img src="{{asset('/storage/images/database-management.png')}}" alt="Icon"  class="img-center">
-                        <h5>Technical support and DevOps</h5>
+                        <a href="{{route('devops')}}" class="text-decoration-none text-light">
+                            <img src="{{asset('/storage/images/database-management.png')}}" alt="Icon"  class="img-center">
+                            <h5>Техническая поддержка и DevOps</h5>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 3: White Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-white">
-                        <img src="{{asset('/storage/images/security-pin.png')}}" alt="Icon"  class="img-center">
-                        <h5>Infrastructure security consulting</h5>
+                        <a href="{{route('security')}}" class="text-decoration-none text-dark">
+                            <img src="{{asset('/storage/images/security-pin.png')}}" alt="Icon"  class="img-center">
+                            <h5>Консультации по безопасности инфраструктуры</h5>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 4: Blue Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-blue">
+                        <a href="{{route('website')}}" class="text-decoration-none text-light">
+
                         <img src="{{asset('/storage/images/cloud-computing.png')}}" alt="Icon"  class="img-center">
-                        <h5>Website and platform design</h5>
+                        <h5>Дизайн веб-сайта и платформы</h5>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 5: White Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-white">
+                        <a href="{{route('ip-service')}}" class="text-decoration-none text-dark">
+
                         <img src="{{asset('/storage/images/data-server (1).png')}}" alt="Icon"  class="img-center">
-                        <h5>Iran static IP service</h5>
+                        <h5>Иран статический IP-сервис</h5>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 6: Blue Background -->
                 <div class="col-md-4">
                     <div class="service-card service-card-blue">
+                        <a href="{{route('educational')}}" class="text-decoration-none text-light">
+
                         <img src="{{asset('/storage/images/data-analysis.png')}}" alt="Icon"  class="img-center">
-                        <h5>Support and launch educational platforms</h5>
+                        <h5>Поддержка и запуск образовательных платформ</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -561,18 +572,18 @@
             <div class="row position-relative">
                 <!-- Left: Illustration -->
                 <div class="col-12 col-md-8  d-flex justify-content-center mb-5">
-                    <img src="{{ asset('storage/images/rate.png') }}" alt="Illustration" class="w-75 ">
+                    <img src="{{ asset('storage/images/us.png') }}" alt="Illustration" class="w-75 ">
                     <!-- Replace 'illustration.png' with your actual illustration image path -->
                 </div>
 
                 <!-- Right: About Us Content -->
                 <div class="col-12 col-md-4">
                     <div class="">
-                        <h2 class="display-3 fw-bold" style="color:#225DA1">16 Years Experience</h3>
-                        
+                        <h2 class="display-3 fw-bold" style="color:#225DA1">16 лет опыта</h3>
+
                         <p class="my-5 fs-6">
-                        Our company has been a leader in providing hosting services to customers all over Iran since 2008.                        </p>
-                        <a href="#" class="btn-contact text-decoration-none mt-5">Contact Us</a>
+                            Наша компания с 2008 года является лидером в предоставлении хостинг-услуг клиентам по всему Ирану.                        </p>
+                        <a href="#" class="btn-contact text-decoration-none mt-5">Связаться с нами</a>
                     </div>
                 </div>
             </div>
@@ -586,8 +597,8 @@
 
         <!-- Overlay Content -->
         <div class="container position-relative d-flex justify-content-between">
-            <h2>Website design for you</h2>
-            <a href="#" class="btn btn-custom">Get started now</a>
+            <h2>Дизайн сайта для вас</h2>
+            <a href="#" class="btn btn-custom">Начните сейчас</a>
         </div>
     </section>
 
@@ -597,13 +608,13 @@
             <div class="row">
                 <!-- Left Sidebar (Categories) -->
                 <div class="col-md-3">
-                    <h2 class="projects-header">Projects</h2>
+                    <h2 class="projects-header">Проекты</h2>
                     <ul class="projects-sidebar">
-                        <li><a href="#" class="active">All</a></li>
-                        <li><a href="#">E-commerce Website</a></li>
-                        <li><a href="#">Corporate Website</a></li>
-                        <li><a href="#">Service Website</a></li>
-                        <li><a href="#">Educational Website</a></li>
+                        <li><a href="#" class="active">Все</a></li>
+                        <li><a href="#">Интернет-магазин</a></li>
+                        <li><a href="#">Корпоративный сайт</a></li>
+                        <li><a href="#">Сервисный сайт</a></li>
+                        <li><a href="#">Образовательный сайт</a></li>
                     </ul>
                 </div>
 
@@ -613,8 +624,10 @@
                         <!-- Project Card 1 -->
                         <div class="col-md-6">
                             <div class="project-card">
-                                <img src="{{asset('/storage/images/project1.png')}}" alt="Project Image">
-                                <div class="project-title">Educational website</div>
+                                <a href="#" class="text-light text-decoration-none">
+                                    <img src="{{asset('/storage/images/project1.png')}}" alt="Project Image">
+                                    <div class="project-title">Образовательный сайт</div>
+                                </a>
                             </div>
                         </div>
 
@@ -622,7 +635,7 @@
                         <div class="col-md-6">
                             <div class="project-card">
                                 <img src="{{asset('/storage/images/project2.png')}}" alt="Project Image">
-                                <div class="project-title">E-commerce Website</div>
+                                <div class="project-title">Интернет-магазин</div>
                             </div>
                         </div>
 
@@ -630,7 +643,7 @@
                         <div class="col-md-6">
                             <div class="project-card">
                                 <img src="{{asset('/storage/images/project3.jpg')}}" alt="Project Image">
-                                <div class="project-title">Service website</div>
+                                <div class="project-title">Сервисный сайт</div>
                             </div>
                         </div>
 
@@ -638,151 +651,147 @@
                         <div class="col-md-6">
                             <div class="project-card">
                                 <img src="{{asset('/storage/images/project4.png')}}" alt="Project Image">
-                                <div class="project-title">Corporate website</div>
+                                <div class="project-title">Корпоративный сайт</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
 
     <section class="contact-section text-center">
         <div class="container">
-            <h2>What can we do for you?</h2>
-            <p>We are ready to work on a project of any complexity.</p>
+            <h2>Что мы можем сделать для вас?</h2>
+            <p>Мы готовы работать над проектом любой сложности.</p>
 
             <!-- Contact Form -->
-            <form action="#" method="POST">
+            <form action="{{ route('contact.send') }}" method="POST">
+                @csrf
                 <div class="row g-3">
                     <!-- Name Field -->
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Your Name*" required>
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя*" required>
                     </div>
                     <!-- Email Field -->
                     <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email*" required>
+                        <input type="email" name="email" class="form-control" placeholder="Электронная почта*" required>
                     </div>
                 </div>
 
                 <div class="row g-3 mt-3">
                     <!-- Reason for Contacting -->
                     <div class="col-md-6">
-                        <select class="form-select" required>
-                            <option value="" disabled selected>Reason for Contacting*</option>
-                            <option value="support">Support</option>
-                            <option value="inquiry">General Inquiry</option>
-                            <option value="project">Start a New Project</option>
+                        <select class="form-select" required name="reason">
+                            <option value="" disabled selected>Причина обращения*</option>
+                            <option value="support">Поддержка</option>
+                            <option value="inquiry">Общий запрос</option>
+                            <option value="project">Начать новый проект</option>
                         </select>
                     </div>
                     <!-- Phone Field -->
                     <div class="col-md-6">
-                        <input type="tel" class="form-control" placeholder="Phone" required>
+                        <input type="tel" class="form-control" name="phone" placeholder="Телефон" required>
                     </div>
-                </div>
-
-                <div class="row mt-3">
-                    <!-- Message Field -->
-                    <div class="col-12">
-                        <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
                     </div>
-                </div>
 
-                <!-- Submit Button -->
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <button type="submit" class="submit-btn">Submit</button>
+                    <div class="row mt-3">
+                        <!-- Message Field -->
+                        <div class="col-12">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Required Note -->
-                <p class="required-note mt-3">* indicates a required field</p>
-            </form>
-        </div>
-    </section>
+                    <!-- Submit Button -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </div>
+                    </div>
 
+                    <!-- Required Note -->
+                    </form>
+                    </div>
+                    </section>
 
-     <!-- Our Customers Section -->
-     <section class="customers-section">
-        <div class="container">
+                    <!-- Our Customers Section -->
+                    <section class="customers-section">
+                        <div class="container">
 
-            <div class="row g-4">
-                <!-- Customer Logos -->
-                <div class="col-md-2 col-6">
-                <h3 class="customer-logo text-dark text-left w-100">Our customers</h3>
-                </div>
-                <div class="col-md-2 col-6">
-                    <img src="{{asset('/storage/images/ACECR_logo.png')}}" class="img-fluid customer-logo" alt="Customer 1">
-                </div>
-                <div class="col-md-2 col-6">
-                    <img src="{{asset('/storage/images/logo_164-1.png')}}" class="img-fluid customer-logo" alt="Customer 2">
-                </div>
-                <div class="col-md-2 col-6">
-                    <img src="{{asset('/storage/images/سازمان-تنظیم-مقررات-ساترا-صداسیما-لوگو 1.png')}}" class="img-fluid customer-logo" alt="Customer 3">
-                </div>
-                <div class="col-md-2 col-6">
-                    <img src="{{asset('/storage/images/logo (1).png')}}" class="img-fluid customer-logo" alt="Customer 4">
-                </div>
+                            <div class="row g-4">
+                                <!-- Customer Logos -->
+                                <div class="col-md-2 col-6">
+                                    <h3 class="customer-logo text-dark text-left w-100">Наши клиенты</h3>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="{{asset('/storage/images/ACECR_logo.png')}}" class="img-fluid customer-logo" alt="Customer 1">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="{{asset('/storage/images/logo_164-1.png')}}" class="img-fluid customer-logo" alt="Customer 2">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="{{asset('/storage/images/سازمان-تنظیم-مقررات-ساترا-صداسیما-لوگو 1.png')}}" class="img-fluid customer-logo" alt="Customer 3">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="{{asset('/storage/images/logo (1).png')}}" class="img-fluid customer-logo" alt="Customer 4">
+                                </div>
 
-                <div class="col-md-2 col-6">
-                    <img src="{{asset('/storage/images/bazarmaj.webp')}}" class="img-fluid customer-logo" alt="Customer 6">
-                </div>
-            </div>
-        </div>
-    </section>
+                                <div class="col-md-2 col-6">
+                                    <img src="{{asset('/storage/images/bazarmaj.webp')}}" class="img-fluid customer-logo" alt="Customer 6">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row   h-100 text-dark pt-5 ">
-                <!-- Contact Info -->
-                <div class="col-md-4 contact-info ">
-                    <p><strong>Phone:</strong> +98 996 614 6640</p>
-                    <p><strong>Email:</strong> <a href="mailto:info@spadserver.com" class="text-dark">info@spadserver.com</a></p>
-                    <p><strong>Social:</strong></p>
-                    <a href="#"><i class="bi bi-instagram text-dark fs-3"></i></a>
-                    <a href="#"><i class="bi bi-linkedin text-dark fs-3"></i></a>
-                    <a href="#"><i class="bi bi-whatsapp text-dark fs-3"></i></a>
-                </div>
+                    <!-- Footer Section -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row h-100 text-dark pt-5">
+                                <!-- Contact Info -->
+                                <div class="col-md-4 contact-info">
+                                    <p><strong>Телефон:</strong> +98 996 614 6640</p>
+                                    <p><strong>Электронная почта:</strong> <a href="mailto:info@spadserver.com" class="text-dark">info@spadserver.com</a></p>
+                                    <p><strong>Социальные сети:</strong></p>
+                                    <a href="#"><i class="bi bi-instagram text-dark fs-3"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark fs-3"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp text-dark fs-3"></i></a>
+                                </div>
 
-                <!-- Partner Logos -->
-                <div class="col-md-8">
-                    <p><strong>Partner Companies:</strong></p>
-                     <!-- First Row -->
-    <div class="row">
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/لوگو 1.png')}}" class="partner-logo" alt="Partner 1">
-        </div>
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/logo_cowork_new 1.png')}}" class="partner-logo" alt="Partner 2">
-        </div>
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/mammut_2-75x70-1.png')}}" class="partner-logo" alt="Partner 3">
-        </div>
-    </div>
+                                <!-- Partner Logos -->
+                                <div class="col-md-8">
+                                    <p><strong>Партнерские компании:</strong></p>
+                                    <!-- First Row -->
+                                    <div class="row">
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/لوگو 1.png')}}" class="partner-logo" alt="Partner 1">
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/logo_cowork_new 1.png')}}" class="partner-logo" alt="Partner 2">
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/mammut_2-75x70-1.png')}}" class="partner-logo" alt="Partner 3">
+                                        </div>
+                                    </div>
 
-    <!-- Second Row -->
-    <div class="row mt-3">
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/logo.svg')}}" class="partner-logo" alt="Partner 4">
-        </div>
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/headerLogo-1.png')}}" class="partner-logo" alt="Partner 5">
-        </div>
-        <div class="col-md-4 col-6">
-            <img src="{{asset('/storage/images/headerLogo-1.png')}}" class="partner-logo" alt="Partner 6">
-        </div>
-    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Spad Cloud Company © 2022. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-
-    <!-- Footer (Optional) -->
+                                    <!-- Second Row -->
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/logo.svg')}}" class="partner-logo" alt="Partner 4">
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/headerLogo-1.png')}}" class="partner-logo" alt="Partner 5">
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <img src="{{asset('/storage/images/headerLogo-1.png')}}" class="partner-logo" alt="Partner 6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>Spad Cloud Company © 2022. Все права защищены.</p>
+                        </div>
+                    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

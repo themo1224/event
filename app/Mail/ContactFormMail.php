@@ -20,6 +20,7 @@ class ContactFormMail extends Mailable
     public function __construct($formData)
     {
         $this->formData = $formData;
+
     }
 
     /**
@@ -27,20 +28,20 @@ class ContactFormMail extends Mailable
      */
     public function envelope()
     {
-        return $this->subject('New Contact Us Form Submission')
-        ->view('emails.contact')
-        ->with('data', $this->formData);
+        return new Envelope(
+            subject: 'Welcome Mail',
+        );
     }
-
     /**
-     * Get the message content definition.
+     * Get the message content definition (email view).
      */
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.contact',  // Define the view to use
         );
     }
+
 
     /**
      * Get the attachments for the message.
